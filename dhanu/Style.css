@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+.Love{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: #ff1119;
+    transform: rotate(45deg);
+}
+.Love::before{
+    position: absolute;
+    content: '';
+    height: 200px;
+    width: 200Lovepx;
+    background: green;
+    top: -50%;
+    border-radius: 50%;
+}
+.Love::after{
+    position: absolute;
+    content: '';
+    height: 200px;
+    width: 200Lovepx;
+    background: green;
+    left: -50%;
+    border-radius: 50%;
+}
+
